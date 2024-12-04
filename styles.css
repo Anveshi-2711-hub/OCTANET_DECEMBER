@@ -1,0 +1,269 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background: #2d3436;
+    color: #fff;
+    padding: 1rem 0;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 1.5rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+    color: #fff; /* White text for readability */
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height for hero section */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000; /* Fallback color */
+  }
+  
+  /* Hero Background with Blur Effect */
+  .hero .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Nainital.jpeg') no-repeat center/cover;
+    filter: blur(6px); /* Apply blur effect */
+    z-index: 1; /* Keeps it behind the content */
+  }
+  
+  /* Hero Content on Top of Background */
+  .hero .hero-content {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the background */
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay */
+    padding: 20px 40px;
+    border-radius: 10px; /* Rounded corners for the overlay */
+    max-width: 600px; /* Optional: limit width for better layout */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+  }
+  
+  /* Hero Heading */
+  .hero .hero-content h1 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds spacing between letters */
+  }
+  
+  /* Hero Paragraph */
+  .hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  /* Button Styling */
+  .hero .hero-content .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0072ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .hero-content .btn:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .hero .hero-content .btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .hero .hero-content .btn {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  
+  /* Button Styling */
+  .hero .hero-content .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0072ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .hero-content .btn:hover
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+/* General Section Styling */
+.places {
+    padding: 50px 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.places h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fbfafa;
+}
+
+/* Flexbox for Centering Cards */
+.place-card-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    gap: 20px; /* Adds space between cards */
+    margin-top: 20px;
+}
+
+/* Place Card Styling */
+.place-card {
+    width: 250px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.place-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Place Card Image */
+.place-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Place Card Content */
+.place-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 15px 5px;
+    color: #333;
+}
+
+.place-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 15px 15px;
+    line-height: 1.4;
+}
+@media (max-width: 768px) {
+    .place-card-container {
+        justify-content: center; /* Keeps cards centered */
+    }
+
+    .place-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Footer */
+.footer {
+    background: #2d3436;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.footer a {
+    color: #27ae60;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
